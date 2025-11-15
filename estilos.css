@@ -77,6 +77,40 @@ html {
     font-weight: 700;
 }
 
+.logo-hero {
+  display: block;                    
+  width: clamp(220px, 40vw, 900px);  
+  max-width: 95%;                    
+  height: auto;                      
+  max-height: 80vh;                  
+  object-fit: contain;
+  margin: 0 auto 2.5rem;             
+  animation: aparecer 1s ease-out;
+}
+
+.icono-logo-imagen {
+  display: inline-block;
+  width: clamp(2.5rem, 6vw, 8rem);   
+  height: auto;
+  object-fit: contain;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 420px) {
+  .logo-hero {
+    width: 80vw;        
+    margin-bottom: 1.5rem;
+  }
+  .icono-logo-imagen {
+    width: clamp(2rem, 10vw, 4.5rem);
+  }
+}
+
 .navegacion {
     display: flex;
     align-items: center;
@@ -761,3 +795,4 @@ footer {
         padding: 3rem 0;
     }
 }
+
